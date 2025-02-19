@@ -1,0 +1,51 @@
+:root { /*variáveis*/
+    --cor-fundo: #00030C;
+    --cor-texto-geral: #ffffff;
+    --cor-texto-alternativa: #C0C0C0;
+    --cor-texto-destaque: #EC2F46;
+    --cor-botao: #167BF7;
+    --tam-fonte-g: 3rem;
+    --tam-fonte-m: 1.75rem;
+    --tam-fonte-p: 1rem;
+}
+
+* { /*reset*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-geral);
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.principal {
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sub-con-principal {
+    width: 42%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: var(--tam-fonte-m);
+    text-align: center;
+}
+
+.sub-con-principal img {
+    max-width: 66%;
+}
