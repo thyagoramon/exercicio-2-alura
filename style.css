@@ -57,12 +57,27 @@ body {
     scale: 1.05;
 }
 
+h1 {
+    font-size: var(--tam-fonte-g);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: var(--tam-fonte-g);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: var(--tam-fonte-m);
+    font-weight: 700;
+}
+
 
 /*container principal*/
 
 .principal {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 38% 62%;
     padding: 0 5%;
     height: 100vh;
     background-image: url(img/Background.png); /*adiciona uma imagem no plano de fundo*/
@@ -85,10 +100,6 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-}
-
-.principal_conteudo_texto h1 {
-    font-weight: 600;
 }
 
 .principal_conteudo_texto img {
@@ -143,15 +154,88 @@ body {
     gap: 1.5rem;
 }
 
-.secundaria_conteudo h1 {
-    font-size: var(--tam-fonte-g);
-    font-weight: 700;
-}
-
 .secundaria_conteudo p {
     color: var(--cor-texto-alternativa);
 }
 
 .secundaria_conteudo a {
     max-width: 33%;
+}
+
+/*dispositivos*/
+
+.dispositivos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 20%;
+    gap: 2rem;
+}
+
+.dispositivos_lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.dispositivos_lista_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dispositivos_lista_item img {
+    transition: all 0.3s;
+}
+
+.dispositivos_lista_item img:hover {
+    scale: 1.1;
+}
+
+
+/*rodape*/
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 20% 5% 20%;
+    gap: 2rem;
+}
+
+.rodape img {
+    transition: all 0.3s;
+}
+
+.rodape img:hover {
+    scale: 1.1;
+}
+
+.rodape_lista {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.rodape_lista a {
+    color: var(--cor-texto-alternativa);
+    font-size: var(--tam-fonte-p);
+    transition: all 0.3s;
+}
+
+.rodape_lista a:hover {
+    color: var(--cor-botao);
+}
+
+.rodape p {
+    color: var(--cor-texto-alternativa);
+    font-size: var(--tam-fonte-xp);
+    text-align: center;
 }
